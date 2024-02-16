@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+  </title>
+  <link rel="icon" href="images/title_icon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css\style.css" rel="stylesheet">
+  <link href="icons\css\all.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body onload="consoleLog()">
+  <!-- Navigation Start  -->
+  <div class="navbar">
+    <div class="container">
+      <div class="flipkart_explore_plus">
+        <img src="images/flipkart.png" style="height: 20px; "> <br>
+        <a>Expore <span>Plus</span></a>
+        <img src="images/plus.png" style="height: 15px; ">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search for products, brands and more">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="login">
+        <span>Login</span>
+        <div class="login-content">
+          <p>New customer? </p>
+          <span>Sign Up</span>
+        </div>
+      </div>
+      <a style="color: white; ">Become a Seller</a>
+      <a style="color: white; ">More ></a>
+      <a style="color: white; ">Cart</a>
+
+    </div>
+  </div>
+  <!-- Navigation End  -->
+
+  <div class="container content">
+    <!-- <h3>List of Consloes</h3> -->
+    <div class="row order_list">
+      <div class="col-lg-8 order_list_left">
+        <div class="row">
+          <div class="col-lg-2">
+            <img src="images/PS5_1.jpg">
+          </div>
+          <div class="col-lg-10">
+            <h5>SONY PlayStation 5 Digital Edition 825 GB with Astro's Playroom (White)</h5>
+          </div>
+        </div>
+        <label>Available Quantity:</label>
+        <input type="text" value="10" readonly><br>
+        <label>Select no of prouduct :</label>
+        <button id="no_of_order_minus"><i class="fa-solid fa-minus"></i></button>
+        <input type="text" value="1" readonly id="no_of_order">
+        <button id="no_of_order_plus"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div class="col-lg-4 order_list_right">
+        <label>Total Amount:</label>
+        <input type="text" value="42750" readonly id="salePrice"> <br>
+        <button class="place_order" onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+  </div>
+  <div id="popup">
+    <img src="images/rick_roll.gif">
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script redef src="js/index.js"></script>
+</body>
+<script>
+  AOS.init();
+</script>
+
+</html>
