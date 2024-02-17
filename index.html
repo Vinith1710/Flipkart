@@ -12,7 +12,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="descriptionSubstring()">
   <!-- Navigation Start  -->
   <div class="navbar">
     <div class="container">
@@ -42,32 +42,33 @@
 <div class="container content">
   <h3>List of Consloes</h3>
   <div class="row">
-    <div class="col-lg-4 content_list">
-      <a href="product.html">
-        <img src="images/PS5_1.jpg">
+    <div class="col-lg-4 content_list"  >
+      <!-- <a href="product.html"> -->
+        <img src="images/PS5_1.jpg" id="content_list_1" onclick="imageLoad(event)">
         <h5>SONY PlayStation 5 Digital Edition 825 GB with Astro's Playroom (White)</h5>
-        <h6>Brace yourself for a whole new world..... </h6>
+        <h6 id="description_1">Brace yourself for a whole new world of possibilities as the PS5 unleashes unparalleled power and innovation. Get ready to elevate your gaming experience to new heights with the Sony PlayStation 5 Console. Unleash the power of play, immerse yourself in stunning visuals, and explore a world of endless possibilities. With the PS5, gaming will never be the same again. </h6>
         <label>Sale Price:</label>
         <input type="text" value=" &#8377;42750" readonly >
-      </a>
+      <!-- </a> -->
     </div>
-    <div class="col-lg-4 content_list">
-      <a href="product.html">
-        <img src="images/NS_1.jpg">
+    <div class="col-lg-4 content_list" >
+      <!-- <a href="product.html"> -->
+        <img src="images/NS_1.jpg" id="content_list_2" onclick="imageLoad(event)">
         <h5>NINTENDO Switch with neon red and blue JoyCon - Version 2 32 GB (Black)</h5>
-        <h6>Nintendo Switch is designed to fit your life..... </h6>
+        <h6 id="description_2">Nintendo Switch is designed to fit your life, transforming from home console to portable system in a snap. The included Joy-Con controllers give you total game play flexibility. You have the option to dock your Nintendo Switch to enjoy HD gaming on your TV. Make use of the tabletop mode to flip the stand to share the screen, then share the fun with a multiplayer game.</h6>
         <label>Sale Price:</label>
         <input type="text" value=" &#8377;28500" readonly >
-      </a>
+      <!-- </a> -->
     </div>
-    <div class="col-lg-4 content_list">
-      <a href="product.html">
-        <img src="images/XB_1.jpg">
+    <div class="col-lg-4 content_list" >
+      <!-- <a href="product.html"> -->
+        <img src="images/XB_1.jpg" id="content_list_3" onclick="imageLoad(event)">
         <h5>MICROSOFT Xbox Series X 1024 GB (Black)</h5>
-        <h6>Advance to the next level of gaming experience..... </h6>
+        <h6 id="description_3">
+          Advance to the next level of gaming experience with the powerful and high-speed Microsoft Xbox Series X. This gaming console features 12 Teraflops of graphics processing power and the Xbox Velocity Architecture for high-speed, seamless gaming. Also, it comes with an Xbox Wireless Controller for hassle-free gaming, and it is compatible with Xbox One accessories. </h6>
         <label>Sale Price:</label>
         <input type="text" value=" &#8377;52250" readonly >
-      </a>
+      <!-- </a> -->
     </div>
   </div>
 </div>

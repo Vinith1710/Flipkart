@@ -1,3 +1,24 @@
+// First Page 
+function descriptionSubstring() {
+    for (let i = 1; i < 4; i++) {
+        document.getElementById("description_" + i).innerHTML = document.getElementById("description_" + i).innerHTML.substring(0, 25) + "...";
+    }
+}
+
+function imageLoad(event) {
+    imageValue = event.target.id;
+    localStorage.setItem('imageLoadNew', imageValue);
+    console.log("log", imageValue)
+    window.location.href = 'product.html';
+
+}
+
+// Second Page 
+function consoleLog() {
+    let selectedProduced = localStorage.getItem('imageLoadNew');
+    console.log(selectedProduced);
+}
+
 function updateDiscount(event) {
     if (event.target.value) {
         document.getElementById('salePrice').value = 42750;
@@ -5,22 +26,22 @@ function updateDiscount(event) {
     else {
         document.getElementById('salePrice').value = null;
     }
-    // console.log('--here--',event.target.value);
 }
+
+
+
 function loadOrderPage() {
     if (document.getElementById('salePrice').value) {
         window.location.href = 'order.html';
-        let abc = document.getElementById('salePrice').value;
-        localStorage.setItem('xyz', abc)
     } else {
         document.getElementById('discount_id_show').style = "display: inline";
     }
 }
 
-function consoleLog() {
-    let def = localStorage.getItem('xyz');
-    console.log(def);
-}
+// function consoleLog() {
+//     let def = localStorage.getItem('xyz');
+//     console.log(def);
+// }
 
 
 var no_of_order_start = 1;
