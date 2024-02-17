@@ -3,19 +3,39 @@ function descriptionSubstring() {
     for (let i = 1; i < 4; i++) {
         document.getElementById("description_" + i).innerHTML = document.getElementById("description_" + i).innerHTML.substring(0, 25) + "...";
     }
+    //    var source = document.getElementById('content_list_1').getAttribute('src');
+    //    console.log("-->", source);
+
+    // var abc = document.getElementById('content_list_1').id;
+    // console.log('-->',abc);
 }
 
 function imageLoad(event) {
-    imageValue = event.target.id;
-    localStorage.setItem('imageLoadNew', imageValue);
-    console.log("log", imageValue)
-    window.location.href = 'product.html';
+    var source = event.target.id;
+        localStorage.setItem('imageSource', source);
+        window.location.href = 'product.html';
+
+    // if (source == content_list_1) {
+    //     let i = 1;
+    //     localStorage.setItem('imageSource', i);
+    //     window.location.href = 'product.html';
+    // } 
+    // else if (source == content_list_2) {
+    //     let i = 2;
+    //     localStorage.setItem('imageSource', i);
+    //     window.location.href = 'product.html';
+    // }
+    // else {
+    //     let i = 3;
+    //     localStorage.setItem('imageSource', i);
+    //     window.location.href = 'product.html';
+    // }
 
 }
 
 // Second Page 
-function consoleLog() {
-    let selectedProduced = localStorage.getItem('imageLoadNew');
+function productPageLoad() {
+    let selectedProduced = localStorage.getItem('imageSource');
     console.log(selectedProduced);
 }
 
@@ -38,10 +58,7 @@ function loadOrderPage() {
     }
 }
 
-// function consoleLog() {
-//     let def = localStorage.getItem('xyz');
-//     console.log(def);
-// }
+
 
 
 var no_of_order_start = 1;
