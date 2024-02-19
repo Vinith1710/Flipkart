@@ -52,6 +52,7 @@ function productPageLoad() {
 }
 
 function updateDiscount(event) {
+    document.getElementById('discount_id_show').style = "display: none";
     if (event.target.value == 1) {
         let price = (document.getElementById('originalPrice').value * 90) / 100;
         document.getElementById('salePrice').value = price;

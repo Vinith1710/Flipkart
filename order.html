@@ -45,10 +45,10 @@
     <div class="row order_list">
       <div class="col-lg-8 order_list_left">
         <div class="row">
-          <div class="col-lg-2">
+          <div class="col-4 ">
             <img id="order_page_image" src="images/PS5_1.jpg">
           </div>
-          <div class="col-lg-10">
+          <div class="col-8 ">
             <h5 id="order_heading"></h5>
           </div>
         </div>
@@ -60,14 +60,17 @@
         <button id="no_of_order_plus"><i class="fa-solid fa-plus"></i></button>
       </div>
       <div class="col-lg-4 order_list_right">
-        <h5>Price Details</h5>
-        <label>Price(1 item)</label>
-        <input type="text" value="" readonly id="orderSinglePrice"> <br>
-        <label>Delivery Charge: <s> 40 </s><span style="color: green;"> Free </span></label><br>
-        <label>Total Amount:</label>
-        <input type="text" value="" readonly id="salePrice"> <br>
+        <div class="price_detais">
+          <h5>Price Details</h5>
+          <label>Price(1 item)</label>
+          <input type="text" value="" readonly id="orderSinglePrice"> <br>
+          <label>Delivery Charge: <s> 40 </s><span style="color: green;"> Free </span></label><br>
+          <label>Total Amount:</label>
+          <input type="text" value="" readonly id="salePrice"> <br>
 
-        <button class="place_order" onclick="placeOrder()">Place Order</button>
+          <button class="place_order" onclick="placeOrder()">Place Order</button>
+        </div>
+
       </div>
     </div>
   </div>
