@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+input {
+    padding-left: 10px;
+}
 /* Navigation Start  */
 .navbar {
     background-color: #2874F0;
@@ -69,6 +71,10 @@
   .login-content p span {
     color: #2874F0;
   }
+  .content_list {
+    display: flex;
+    flex-direction: column;
+  }
 /* Navigation End  */
 
 /* content start  */
@@ -105,8 +111,12 @@
 .product_list_right * {
     margin: 15px 0;
 }
+.carousel-item {
+    height: 600px;
+}
 .product_list_left img {
-    height: 500px;
+    height: 100%;
+    width: 100%;
     align-self: center;
 }
 .product_list_right input {
@@ -124,6 +134,7 @@
     background-color: orange;
     color: white;
 }
+
 /* Order Page  */
 .order_list {
     background-color: rgba(230, 230, 230, 0.5);
